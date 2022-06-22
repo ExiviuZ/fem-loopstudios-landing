@@ -234,14 +234,16 @@ main {
   text-transform: uppercase;
   letter-spacing: 5px;
   padding: 0.75rem 2rem;
-  background-color: hsl(var(--black));
-  border: 1px solid transparent;
+  background-color: hsl(var(--white));
+  border: 1px solid hsl(var(--black));
+  color:hsl(var(--black));
 }
 
 .our-creation a:hover {
-  background-color: white;
-  color: hsl(var(--black));
-  border: 1px solid hsl(var(--black));
+  background-color: hsl(var(--black));
+  border: 1px solid hsl(var(--white));
+  color:hsl(var(--white));
+  
 }
 
 .our-creation-list {
@@ -451,20 +453,14 @@ ion-icon {
     right: 0;
     margin: auto;
     transform: translateY(140%);
-    background-color: hsl(var(--white));
-    color: hsl(var(--black));
-    border: 1px solid hsl(var(--black));
+    
   }
 
   h1 {
     padding-right: clamp(0.9375rem, -2.8125rem + 20vw, 4.6875rem);
   }
 
-  .our-creation a:hover {
-    color: white;
-    background-color: hsl(var(--black));
-    border: 1px solid hsl(var(--white));
-  }
+  
   .our-creation h2 {
     margin: auto;
   }
